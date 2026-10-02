@@ -1,0 +1,90 @@
+<<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profil Rachell</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#FFB6D9;--lilac:#C8A2E8;--sky:#A8D8F0;--navy:#0F1B3D;--grad:linear-gradient(90deg,#FFB6D9,#C8A2E8,#A8D8F0,#FFB6D9)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--navy);color:#e8ecf8;line-height:1.7;min-height:100vh;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;width:420px;height:420px;border-radius:50%;filter:blur(110px);opacity:.35;z-index:-1}
+body::before{background:var(--pink);top:-120px;left:-100px}
+body::after{background:var(--sky);bottom:-140px;right:-100px}
+h1,h2{font-family:'Sora',sans-serif}
+.gt{background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 6s linear infinite}
+@keyframes flow{to{background-position:-200% 0}}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+.wrap{max-width:1000px;margin:auto;padding:56px 20px;display:grid;grid-template-columns:290px 1fr;gap:28px;align-items:start}
+aside,.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:22px;backdrop-filter:blur(12px)}
+aside{position:sticky;top:32px;text-align:center;padding:32px 22px}
+.av{width:150px;aspect-ratio:3/4;margin:0 auto 18px;border-radius:20px;padding:3px;background:var(--grad)}
+.av img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 34%;border-radius:17px}
+h1{font-size:2rem;line-height:1.2}
+.nama{color:#c9d0ea;font-size:.9rem;margin-bottom:22px}
+.kontak{display:grid;gap:8px;text-align:left}
+.kontak>*{color:#fff;text-decoration:none;font-size:.85rem;padding:9px 14px;border-radius:12px;background:rgba(255,255,255,.05);border-left:3px solid var(--lilac);word-break:break-all}
+.kontak a:hover,.kontak a:focus-visible{background:var(--sky);color:var(--navy);outline:none}
+main{display:grid;gap:20px}
+.card{padding:26px;animation:up .7s both}
+main>:nth-child(2){animation-delay:.1s}main>:nth-child(3){animation-delay:.2s}main>:nth-child(4){animation-delay:.3s}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+h2{font-size:1.1rem;margin-bottom:14px}
+.tl{list-style:none;padding-left:22px;border-left:2px solid;border-image:linear-gradient(var(--pink),var(--sky)) 1}
+.tl li{position:relative;margin-bottom:16px;font-weight:600}
+.tl li::before{content:"";position:absolute;left:-28px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--lilac);box-shadow:0 0 0 4px rgba(200,162,232,.25)}
+.tl small{display:block;font-weight:400;color:var(--sky)}
+.tag{display:inline-block;padding:3px 14px;margin:4px 6px 4px 0;border-radius:20px;font-size:.85rem;font-weight:600;color:var(--navy);background:var(--pink)}
+.tag:nth-child(even){background:var(--lilac)}.tag:nth-child(3n){background:var(--sky)}
+@media(max-width:800px){.wrap{grid-template-columns:1fr}aside{position:static}.duo{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <div class="av"><img src="image.png/image.png/image.png" alt="Foto Rachellya Khanza Surya Putri" ></div>
+    <h1 class="gt">Profil Rachell</h1>
+    <p class="nama">Rachellya Khanza Surya Putri</p>
+    <div class="kontak">
+      <a href="mailto:rachellyakhanza31@gmail.com">rachellyakhanza31@gmail.com</a>
+      <a href="https://wa.me/6281367844662">081367844662</a>
+      <a href="https://instagram.com/rachellya.khanza">@rachellya.khanza</a>
+      <span>Perumahan Divisi 2, Lampung Tengah</span>
+    </div>
+  </aside>
+  <main>
+    <section class="card">
+      <h2 class="gt">Tentang Saya</h2>
+      <p>Saya Rachellya Khanza Surya Putri, siswi kelas 12 SMA Gunung Madu dengan peminatan Ekonomi, Sosiologi, dan CIT. Saya memiliki rasa ingin tahu yang besar dan tertarik pada berbagai bidang, mulai dari psikologi, administrasi publik, hingga teknik informatika. Saya senang belajar hal baru dan ingin terus berkembang di bidang yang bermanfaat bagi banyak orang.</p>
+    </section>
+    <section class="card">
+      <h2 class="gt">Pendidikan</h2>
+      <ul class="tl">
+        <li>SMA Gunung Madu<small>2024 - sekarang</small></li>
+        <li>SMP Satya Dharma Sudjana<small>2021 - 2024</small></li>
+        <li>SDN 1 Gunung Madu<small>2015 - 2021</small></li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2 class="gt">Keahlian</h2>
+      <span class="tag">Dasar Python</span>
+      <span class="tag">Berani berbicara di depan umum</span>
+      <span class="tag">Komunikasi yang terus berkembang</span>
+    </section>
+    <div class="duo">
+      <section class="card">
+        <h2 class="gt">Pengalaman</h2>
+        <ul class="tl"><li>Peserta OSN Informatika<small>Tingkat Kabupaten, 2026</small></li></ul>
+      </section>
+      <section class="card">
+        <h2 class="gt">Hobi</h2>
+        <span class="tag">Membaca novel</span>
+        <span class="tag">Menonton</span>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
